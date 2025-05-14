@@ -1,0 +1,1 @@
+egrep -o "\w+" example.txt | sort | uniq -c | sort -nr

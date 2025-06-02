@@ -1,0 +1,7 @@
+{
+    "labels": ["AND", "THE", "IN"],
+    "datasets": [{
+        "label": "frequency",
+        "data": [1286, 1054, 750]
+    }]
+}

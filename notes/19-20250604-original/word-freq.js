@@ -34,11 +34,11 @@ function getWordFreq(text) {
 // {단어: 빈도} 꼴의 객체를 받아서 chartData 객체를 돌려주는 함수
 function getChartData(freq, topn=30) {
     const chartData = {
-        "labels": Object.keys(freq),
+        "labels": Object.keys(freq).slice(0, topn),
         "datasets": [
             {
                 "label": "Frequency",
-                "data": Object.values(freq)
+                "data": Object.values(freq).slice(0, topn)
             }
         ]
     };
